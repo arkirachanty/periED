@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #collapsednav {
 	color: #000000;
 	z-index: 3;
@@ -6,10 +10,49 @@
 #header {
 	background: url(field1.jpg) no-repeat center center;
 	background-size: cover;
-	width: 97vw;
+	min-width: 100%;
 	padding-bottom: 15%;
 	padding-top: 15%;
 	min-height: 700px;
 	color: #FFFFFF;
 	text-align: center;
+}
+
+#what-we-do {
+	text-align: center;
+	background-color: transparent;
+	color: black;
+	border-top: solid;
+	border-color: #FFFFFF;
+}
+
+#frontpg-btn {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #9E3B33;
+	color: #FFFFFF;
+	vertical-align: middle;
+}
+
+#frontpg-btn:hover {
+	background-color: #7A0707;
+}
+
+#navbar-ed {
+	text-transform: uppercase;
+	/*background-color: transparent;*/
+}
+
+#navbar-ed:hover {
+	/*border-bottom: solid;
+	border-color: black;
+	background-color: transparent;*/
+}
+
+#aboutus {
+	padding-top: 0px;
+	text-align: center;
+	background-color: #90CA77;
+	color: #FFFFFF;
+	vertical-align: top;
 }
