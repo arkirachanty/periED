@@ -1,0 +1,15 @@
+#collapsednav {
+	color: #000000;
+	z-index: 3;
+}
+
+#header {
+	background: url(field1.jpg) no-repeat center center;
+	background-size: cover;
+	width: 97vw;
+	padding-bottom: 15%;
+	padding-top: 15%;
+	min-height: 700px;
+	color: #FFFFFF;
+	text-align: center;
+}
