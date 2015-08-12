@@ -1266,6 +1266,7 @@ h6 .small,
 h1,
 .h1 {
   font-size: 36px;
+  font-weight: bold;
 }
 h2,
 .h2 {
@@ -3006,7 +3007,7 @@ select[multiple].input-lg {
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   vertical-align: middle;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
@@ -4358,7 +4359,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-toggle .icon-bar {
   display: block;
-  color: #000000;
+  color
   width: 22px;
   height: 2px;
   border-radius: 1px;
