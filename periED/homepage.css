@@ -57,31 +57,6 @@ html {
 	vertical-align: top;
 }
 
- span.desc {
-	background-color: #FFFFFF;
-	opacity: 0.7;
-	visibility: hidden;
-	display: block;
-	width: 200px;
-	height: 250px;
-	left: 0;
-	position: absolute;
-	top: 0;
-	text-align: center;
-	color: black;
- }
-
-#headshot span.desc span {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-	opacity: 0;
-}
-
-#headshot span.desc:hover{
-	opacity: 0.7;
-}
-
 .bios {
 	max-width: 1106px;
 	text-align: center;
@@ -134,10 +109,12 @@ html {
 
 .bios figcaption p {
 	display: table-cell;
-	font-size: 1.5em;
+	font-size: 11pt;
 	position: relative;
-	top: -40px;
+	vertical-align: middle;
+	top: 0px;
 	width: 200px;
+	height: 250px;
 	vertical-align: middle;
 }
 
