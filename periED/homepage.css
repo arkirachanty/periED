@@ -11,19 +11,27 @@ html {
 	background: url(media/field1.jpg) no-repeat center center;
 	background-size: cover;
 	min-width: 100%;
-	padding-bottom: 15%;
+	padding-bottom: 30%;
 	padding-top: 15%;
 	min-height: 700px;
-	color: #FFFFFF;
 	text-align: center;
 }
 
-#what-we-do {
+#header-text {
+	color: white;
+}
+
+#what-we-do-title {
 	text-align: center;
 	background-color: transparent;
-	color: black;
+	color: #81C6DD;
 	border-top: solid;
 	border-color: #FFFFFF;
+	font-size: 50px;
+}
+
+#what-we-do-text {
+	font-size: 20px;
 }
 
 #frontpg-btn {
@@ -32,6 +40,10 @@ html {
 	background-color: #9E3B33;
 	color: #FFFFFF;
 	vertical-align: middle;
+}
+
+#frontpg-btn h3 {
+	color: #FFFFFF;
 }
 
 #frontpg-btn:hover {
@@ -58,16 +70,22 @@ html {
 }
 
 .bios {
-	max-width: 1106px;
+	max-width: 100%;
 	text-align: center;
 	vertical-align: middle;
 	padding: 0 0 0 0;
+}
+
+.bios h2 {
+	color: #FFFFFF;
+	text-align: center;
 }
 
 .bios li {
 	display: inline-block;
 	margin: 1em;
 	max-width: 200px;
+	vertical-align: middle;
 }
 
 .bios img {
@@ -86,6 +104,7 @@ html {
 	position: relative;
 	max-width: 200px;
 	vertical-align: middle;
+	text-align: center;
 }
 
 .bios figcaption {
