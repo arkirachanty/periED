@@ -4,18 +4,20 @@ html {
 
 h1 {
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 46px;
     font-size: 46px;
     margin: 0 0 23px 0;
+    color: #90CA77;
 }
 
 h2 {
     font-family: 'Grand Hotel', cursive;
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 40px;
     line-height: 23px;
     margin: 0 0 23px 0;
+    color: #81C6DD;
 }
 
 p {
@@ -27,4 +29,25 @@ p {
 
 #navbar p {
 	margin: 0 0 0 0;
+}
+
+#footer {
+	border-top: solid;
+	border-color: #B3B3B3;
+	border-width: 0.4px;
+}
+
+#footer h1 {
+	padding-top: 10%;
+	font-size: 20px;
+	color: black;
+}
+
+#footer img {
+	padding:20%;
+	vertical-align: middle;
+}
+
+#copyright p {
+	text-align: right;
 }

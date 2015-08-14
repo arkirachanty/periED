@@ -112,9 +112,10 @@
 
 .bios figcaption p {
 	display: table-cell;
-	font-size: 11pt;
+	font-size: 13pt;
 	position: relative;
 	vertical-align: middle;
+	font-weight: bold;
 	top: 0px;
 	width: 200px;
 	height: 250px;
