@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #collapsednav {
 	color: #000000;
 	z-index: 3;

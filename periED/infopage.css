@@ -1,0 +1,43 @@
+#header {
+	background: url(media/field1.jpg) no-repeat center center;
+	background-size: cover;
+	min-width: 100%;
+	padding-bottom: 30%;
+	padding-top: 15%;
+	min-height: 700px;
+	text-align: center;
+}
+
+#header-text {
+	color: white;
+}
+
+.container {
+	padding-top: 30px;
+}
+
+#focusbox {
+	background-color: #a50c00;
+	color: white;
+}
+
+ul {
+	padding-top: 5px;
+}
+
+#stories-btn {
+	background-color: #90CA77;
+	color: #FFFFFF;
+	vertical-align: middle;
+}
+
+#stories-btn h2 {
+	color: #FFFFFF;
+	font-size: 30px;
+	vertical-align: middle;
+	padding-top: 15px;
+}
+
+#stories-btn:hover {
+	background-color: #78a564;
+}
