@@ -23,4 +23,6 @@
 
 #focusbox .jumbotron h1 {
 	font-size: 30px;
+	padding-bottom: 0px;
+	padding-left: 10px;
 }
