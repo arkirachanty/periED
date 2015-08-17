@@ -13,6 +13,81 @@
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   		<style type="text/css">
+  		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+
+			h1 {
+			 color: #fff;
+			 text-align: center;
+			 font-weight: 300;
+			}
+
+			#slider {
+			 position: relative;
+			 overflow: hidden;
+			 margin: 160px auto 0 auto;
+			 border-radius: 4px;
+			}
+
+			#slider ul {
+			 position: relative;
+			 top: 50px;
+			 margin: 0;
+			 padding: 0;
+			 height: 200px;
+			 list-style: none;
+			}
+
+			#slider ul li {
+			 position: relative;
+			 display: block;
+			 float: left;
+			 margin: 0;
+			 padding: 0;
+			 width: 400px;
+			 height: 600px;
+			 text-align: center;
+			 line-height: 300px;
+			}
+
+			a.control_prev, a.control_next {
+			 position: absolute;
+			 top: 40%;
+			 z-index: 999;
+			 display: block;
+			 padding: 4% 3%;
+			 width: auto;
+			 height: auto;
+			 background: black;
+			 color: white;
+			 text-decoration: none;
+			 font-weight: 600;
+			 font-size: 18px;
+			 opacity: 0.8;
+			 cursor: pointer;
+			}
+
+			a.control_prev:hover, a.control_next:hover {
+			 opacity: 1;
+			 -webkit-transition: all 0.2s ease;
+			}
+
+			a.control_prev {
+			 border-radius: 0 2px 2px 0;
+			}
+
+			a.control_next {
+			 right: 0;
+			 border-radius: 2px 0 0 2px;
+			}
+
+			.slider_option {
+			 position: relative;
+			 margin: 10px auto;
+			 width: 160px;
+			 font-size: 18px;
+			}
+
   			h2{
   				text-decoration: underline;
   			}
@@ -23,13 +98,92 @@
             	text-decoration: none;
             }
             table, th, td {
-    border: 1px solid black;
-    padding: 5px;
-}
-table {
-    border-spacing: 15px;
-}
+			    border: 1px solid black;
+			    padding: 5px;
+			}
+			table {
+			    border-spacing: 15px;
+			}
+			ul.img-list {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  text-align: center;
+			}
+
+			ul.img-list li {
+			  display: inline-block;
+			  width: 150px;
+			  margin: 0 1em 1em 0;
+			  position: relative;
+			  height: 50px;
+			}
+			span.text-content {
+			  background: rgba(0,0,0,0.5);
+			  color: white;
+			  cursor: pointer;
+			  display: table;
+			  height: 50px;
+			  left: 0;
+			  position: absolute;
+			  top: 0;
+			  width: 400px;
+			  opacity: 0;
+			}
+			ul.img-list li:hover span.text-content {
+			  opacity: 1;
+			}
+
   		</style>
+  			<script>
+ 
+			   jQuery(document).ready(function ($) {
+
+			 $('#checkbox').change(function(){
+			   setInterval(function () {
+			       moveRight();
+			   }, 3000);
+			 });
+			 
+				var slideCount = $('#slider ul li').length;
+				var slideWidth = $('#slider ul li').width();
+				var slideHeight = $('#slider ul li').height();
+				var sliderUlWidth = slideCount * slideWidth;
+				
+				$('#slider').css({ width: slideWidth, height: slideHeight });
+				
+				$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+				
+			   $('#slider ul li:last-child').prependTo('#slider ul');
+
+			   function moveLeft() {
+			       $('#slider ul').animate({
+			           left: + slideWidth
+			       }, 200, function () {
+			           $('#slider ul li:last-child').prependTo('#slider ul');
+			           $('#slider ul').css('left', '');
+			       });
+			   };
+
+			   function moveRight() {
+			       $('#slider ul').animate({
+			           left: - slideWidth
+			       }, 200, function () {
+			           $('#slider ul li:first-child').appendTo('#slider ul');
+			           $('#slider ul').css('left', '');
+			       });
+			   };
+
+			   $('a.control_prev').click(function () {
+			       moveLeft();
+			   });
+
+			   $('a.control_next').click(function () {
+			       moveRight();
+			   });
+
+			});    
+		</script>
 
 	</head>
 	<body>
@@ -53,7 +207,8 @@ table {
 		    </ul>
 		</div>
 	</div>
-</nav>
+</div>
+	</nav>
 				<h1>Products:</h1>
 				<h2>Tampons</h2>
 				<p>Tampons are soft cotton "plugs" inserted in your vagina to absorb your menstrual flow before it leaves the body. Yes, it may feel a little uncomfortable if you insert it incorrectly, (not to worry- you'll get it right quickly!) and no- tampons will not make you lose your virginity.<br>
@@ -63,6 +218,20 @@ table {
 				<br></b>Not to worry- tampons are here to help! These products can be sold at your local pharmacy or grocery store in all different sizes and absorbencies to match your needs. They come in cute packaging and colors so that you'll start looking forward to your next period. (Okay, we're exaggerating. But really. Tampons are great!) The best part is that you won't even feel an overwhelming rush every time you stand up because the cotton absorbs your blood before it exits your vagina. You can continue with your daily activities as if Aunt Flow isn't there- and yes, that includes swimming!<br>
 
 				<br>Okay, enough raving about tampons. Here are some mini-reviews on great products that you can check out! --------GROUP REVIEWS---------</p>
+
+				
+				<div id="slider">
+						 <a href="#" class="control_next"></a>
+						 <a href="#" class="control_prev"></a>
+						 <ul class="img-list">
+						   <li><img src="media/pearl.JPG" style="width:200px; height:240px;"/>
+						   	<span class="text-content"><span>Pros: Smooth, pearl-like applicator makes this product easy for first time user. Available in many different absorbencies. Built in Backup Braid helps prevent leaks.</span></span>
+						   </li>
+						   <li><img src="media/playtex.JPG"></li>
+						   <li><img src="media/ob.JPG"></li>
+						   <li><img src="media/sea.JPG"></li>
+						 </ul>  
+				</div>
 				<table>
 					<tr>
 						<th><center>Tampons</center></th>
@@ -82,17 +251,17 @@ table {
 						environmentally friendly<br>
 						Cheap yet comfortable<br></th>
 						<th>Known for less absorbency than Tampax tampons<br>
-No applicator makes for harder insertion<br>
+						No applicator makes for harder insertion<br>
 						</th>
 					</tr>
 					<tr>
 						<th><img src="media/ob.JPG" style="width:130px; height:130;"></th>
 						<th>Small and compact, easy to store in your purse<br>
-No wasted plastic applicator, more
-environmentally friendly<br>
-Cheap yet comfortable<br></th>
+						No wasted plastic applicator, more
+						environmentally friendly<br>
+						Cheap yet comfortable<br></th>
 						<th>Known for less absorbency than Tampax tampons<br>
-No applicator makes for harder insertion<br></th>
+						No applicator makes for harder insertion<br></th>
 					</tr>
 					<tr>
 						<th><img src="media/sea.JPG" style="width:140px; height:200px;">
@@ -167,8 +336,8 @@ No applicator makes for harder insertion<br></th>
 				<br><h2>Cups</h2>
 				<p>Okay, now we're talking unconventional methods. Menstrual cups are the least common form of period protection because adults generally fail to publicize this product. Menstrual cups are way underrated tbh. They're environmentally friendly and comfortable with practice. Menstrual cups are flexible bell-shaped collectors that gather all of those lady liquids before they exit the body, thus providing similar benefits as tampons. They also have an added advantage of environmental friendliness and fewer health risks such as TSS and vaginal infections that come with repeated tampon usage. Menstrual cups are reusable and are emptied then washed before reinsertion.<br>
 
-<br>Because using menstrual cups generally require a certain level of skill, they are best used after you have had some experience with using tampons (insertion methods can be difficult when you first start your period!)<br>
-</p>
+				<br>Because using menstrual cups generally require a certain level of skill, they are best used after you have had some experience with using tampons (insertion methods can be difficult when you first start your period!)<br>
+				</p>
 				<table>
 					<tr>
 						<th><center>Cups</center></th>
@@ -178,9 +347,9 @@ No applicator makes for harder insertion<br></th>
 					<tr>
 						<th><img src="media/diva.JPG" style="width:130px; height:170px;"></th>
 						<th>Holds an entire ounce, so does not require to be emptied as often<br>
-Less leakage than tampons<br>
-Non-absorbent and does not dry out bodily fluids like tampons do<br>
-Economically friendly<br></th>
+						Less leakage than tampons<br>
+						Non-absorbent and does not dry out bodily fluids like tampons do<br>
+						Economically friendly<br></th>
 						<th>Similar to inserting a tampon but different at the same time<br>
 						High startup cost.<br></th>
 					</tr>
@@ -194,8 +363,6 @@ Economically friendly<br></th>
 					</tr>
 				</table>
 				<p><br>If you have any questions about tampons, check out our <a href="file:///C:/Users/Girls%20Who%20Code/Documents/2015-sip-seattle-microsoft-02/periED/info.html">common misconceptions</a><br></p>
-			</div>
-		</div>
 	</body>
 	<footer class="footer">
       		<div class="container" id="footer">
