@@ -1,0 +1,136 @@
+h1 {
+ color: #fff;
+ text-align: center;
+ font-weight: 300;
+}
+
+#slider {
+ position: relative;
+ overflow: hidden;
+ margin: 160px auto 0 auto;
+ border-radius: 4px;
+}
+
+#slider ul {
+ position: relative;
+ top: 50px;
+ margin: 0;
+ padding: 0;
+ height: 200px;
+ list-style: none;
+}
+
+#slider ul li {
+ position: relative;
+ display: block;
+ float: left;
+ margin: 0;
+ padding: 0;
+ width: 400px;
+ height: 600px;
+ text-align: center;
+ line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+ position: absolute;
+ top: 40%;
+ z-index: 999;
+ display: block;
+ padding: 4% 3%;
+ width: auto;
+ height: auto;
+ background: black;
+ color: white;
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 18px;
+ opacity: 0.8;
+ cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+ opacity: 1;
+ -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+ border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+ right: 0;
+ border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+ position: relative;
+ margin: 10px auto;
+ width: 160px;
+ font-size: 18px;
+}
+
+	h2{
+		text-decoration: underline;
+	}
+	li {
+    display: inline;
+}
+a {
+	text-decoration: none;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+table {
+    border-spacing: 15px;
+}
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.img-list li {
+  display: inline-block;
+  width: 150px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  height: 50px;
+}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 400px;
+  opacity: 0;
+}
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#header {
+	background: url(media/cuteall.jpg) no-repeat center center;
+	background-size: cover;
+	min-width: 100%;
+	padding-bottom: 30%;
+	padding-top: 15%;
+	min-height: 700px;
+	text-align: center;
+}
+
+#header-text {
+	color: white;
+}
