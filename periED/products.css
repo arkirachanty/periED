@@ -79,6 +79,7 @@ a.control_next {
 a {
 	text-decoration: none;
 }
+
 table, th, td {
     border: 1px solid black;
     padding: 5px;
@@ -86,6 +87,7 @@ table, th, td {
 table {
     border-spacing: 15px;
 }
+
 ul.img-list {
   list-style-type: none;
   margin: 0;
