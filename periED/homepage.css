@@ -8,7 +8,7 @@ html {
 }
 
 #header {
-	background: url(media/field1.jpg) no-repeat center center;
+	background: url(media/fieldarmsout.jpg) no-repeat center center;
 	background-size: cover;
 	min-width: 100%;
 	padding-bottom: 30%;
@@ -18,7 +18,7 @@ html {
 }
 
 #header-text {
-	color: white;
+	color: black;
 }
 
 #what-we-do-title {
