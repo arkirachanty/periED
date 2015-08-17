@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <meta charset="utf-8">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<link href="contact.css" rel="stylesheet">
+		<link href="contact.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" type="image/png" href="media/favicon.png">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="contact-form" class="clearfix">
+				<h1>Contact Us</h1>
+				<ul id="errors" class="">
+					<li id="info">There was an error with your submission.</li>
+				</ul>
+				<p id="success">Thanks for your message! We will get back to you as soon as possible.</p>
+				<form method="post" action="#" name="form">
+					<p id="req-field-desc"><span class="required">*</span> required</p>
+					<label for="name">Name: <span class="required">*</span></label>
+					<input type="text" id="name" name="name" value="" required="required" autofocus="autofocus" />
+					<label for="email">Email: <span class="required">*</span></label>
+					<input type="email" id="email" name="email" value="" required="required" />
+					<label for="subject">Subject: <span class="required">*</span></label>
+					<input type="text" id="subject" name="subject" value="" required="required" />
+					<label for="message">Message: <span class="required">*</span></label>
+					<textarea id="message" name="message" value="" required="required"></textarea>
+					<span id="loading"></span>
+					<input type="submit" value="Submit" id="submit-button" ?>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+
+
