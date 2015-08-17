@@ -1,5 +1,5 @@
 #header {
-	background: url(media/fieldweird.jpg) no-repeat center center;
+	background: url(media/lindaneetacloseup.jpg) no-repeat center center;
 	background-size: cover;
 	min-width: 100%;
 	padding-bottom: 30%;
@@ -12,15 +12,6 @@
 	color: white;
 }
 
-#focusbox {
+#advicemain {
 	padding-top: 30px;
-}
-
-#focusbox .jumbotron {
-	background-color: #90CA77;
-	color: white;
-}
-
-#focusbox .jumbotron h1 {
-	font-size: 30px;
 }
