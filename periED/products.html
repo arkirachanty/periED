@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>periED.- Products</title>
-		 <meta name="viewport" content="width=device-width, initial-scale=1">
-		 <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="products.css" rel="stylesheet">
@@ -14,18 +14,43 @@
   		<style type="text/css">
   		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 		<script src="js/jquery.flexslider-min.js"></script>
+		<style>
+		ul li{
+			float:inherit; 
+			padding:40px; 
+			border:black; 
+			margin:50px;
+			background: black;
+			width: 250px;
+		}
+    	ul li div{
+    		display:block; 
+    		background:black; 
+    		background-size: cover;
+    		opacity:1; 
+    		position:absolute;
+    		text-align: center;
+    		min-height: 50%;
+    		min-width: 50%;
+    		line-height: 20px;
+    		color:white;
+    		-webkit-transition: opacity 300ms;
+  			-moz-transition: opacity 300ms;
+  			-o-transition: opacity 300ms;
+  			transition: opacity 300ms;
+    	}
 
 			
   		</style>
   			<script>
  
-			   jQuery(document).ready(function ($) {
+			  jQuery(document).ready(function ($) {
 
-			 $('#checkbox').change(function(){
-			   setInterval(function () {
-			       moveRight();
-			   }, 3000);
-			 });
+			$('#checkbox').change(function(){
+			  setInterval(function () {
+			      moveRight();
+			  }, 3000);
+			});
 			 
 				var slideCount = $('#slider ul li').length;
 				var slideWidth = $('#slider ul li').width();
@@ -36,37 +61,38 @@
 				
 				$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
 				
-			   $('#slider ul li:last-child').prependTo('#slider ul');
+			  $('#slider ul li:last-child').prependTo('#slider ul');
 
-			   function moveLeft() {
-			       $('#slider ul').animate({
-			           left: + slideWidth
-			       }, 200, function () {
-			           $('#slider ul li:last-child').prependTo('#slider ul');
-			           $('#slider ul').css('left', '');
-			       });
-			   };
+			  function moveLeft() {
+			      $('#slider ul').animate({
+			          left: + slideWidth
+			      }, 200, function () {
+			          $('#slider ul li:last-child').prependTo('#slider ul');
+			          $('#slider ul').css('left', '');
+			      });
+			  };
 
-			   function moveRight() {
-			       $('#slider ul').animate({
-			           left: - slideWidth
-			       }, 200, function () {
-			           $('#slider ul li:first-child').appendTo('#slider ul');
-			           $('#slider ul').css('left', '');
-			       });
-			   };
+			  function moveRight() {
+			      $('#slider ul').animate({
+			          left: - slideWidth
+			      }, 200, function () {
+			          $('#slider ul li:first-child').appendTo('#slider ul');
+			          $('#slider ul').css('left', '');
+			      });
+			  };
 
-			   $('a.control_prev').click(function () {
-			       moveLeft();
-			       return false;
-			   });
+			  $('a.control_prev').click(function () {
+			      moveLeft();
+			      return false;
+			  });
 
-			   $('a.control_next').click(function () {
-			       moveRight();
-			       return false;
-			   });
+			  $('a.control_next').click(function () {
+			      moveRight();
+			      return false;
+			  });
 
 			});
+
 
 		</script>
 
@@ -76,20 +102,20 @@
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				    	<span class="sr-only">Toggle navigation</span>
+				   	<span class="sr-only">Toggle navigation</span>
             			<span class="icon-bar"></span>
             			<span class="icon-bar"></span>
            				<span class="icon-bar"></span>
-			        </button>
-      		 <a class="navbar-brand" href="index.html" alt="periED."><img src = "media/periEDtitle.png"></a>
-    	 </div>
+			       </button>
+      		<a class="navbar-brand" href="index.html" alt="periED."><img src = "media/periEDtitle.png"></a>
+    	</div>
 		<div class="collapse navbar-collapse" id="navbar">
-		    <ul class="nav navbar-nav">
-		        <li><a href="info.html"><p>INFO</p></a></li>
-		        <li><a href="products.html"><p>PRODUCTS</p></a></li>
-		        <li><a href="#"><p>HELP</p></a></li>
-		        <li><a href="embarrassingstories.html"><p>STORIES</p></a></li>
-		    </ul>
+		   <ul class="nav navbar-nav">
+		       <li><a href="info.html"><p>INFO</p></a></li>
+		       <li><a href="products.html"><p>PRODUCTS</p></a></li>
+		       <li><a href="#"><p>HELP</p></a></li>
+		       <li><a href="embarrassingstories.html"><p>STORIES</p></a></li>
+		   </ul>
 		</div>
 	</div>
 </nav>
@@ -103,47 +129,80 @@
 				<h1>Products:</h1>
 
 				<h2>Tampons</h2>
-				<p>Tampons are soft cotton "plugs" inserted in your vagina to absorb your menstrual flow before it leaves the body. Yes, it may feel a little uncomfortable if you insert it incorrectly, (not to worry- you'll get it right quickly!) and no- tampons will not make you lose your virginity.<br>
+				<p>Tampons are like tiny, soft, cotton rockets inserted in your vagina to absorb your menstrual flow before it leaves the body. Yes, it might feel a little uncomfortable if you insert it incorrectly, (don’t worry, you’ll be able to figure it out with some practice!) and no- tampons will not make you lose your virginity.<br>
 
-				<br>Although tampons may take a while to get used to, the process is so worth it. Let's be real- you love swimming in lakes, and pads just don't cut it. Plus, they feel like giant diapers and worrying whether they can be seen through your LuluLemons is unnecessary paranoia no one has time for.<br>
+				<br>Although tampons may take a while to get used to, the process is so worth it. Let’s be real- you love swimming in lakes, and pads just don’t cut it. Plus, they can feel kind of like diapers and worrying whether they can be seen through your LuluLemons is unnecessary paranoia no one has time for.<br>
 
-				<br></b>Not to worry- tampons are here to help! These products can be sold at your local pharmacy or grocery store in all different sizes and absorbencies to match your needs. They come in cute packaging and colors so that you'll start looking forward to your next period. (Okay, we're exaggerating. But really. Tampons are great!) The best part is that you won't even feel an overwhelming rush every time you stand up because the cotton absorbs your blood before it exits your vagina. You can continue with your daily activities as if Aunt Flow isn't there- and yes, that includes swimming!<br>
+				<br></b>So knucks to modern science and technology because <b>T A M P O N S.</b> They’re sold at your local pharmacy/ grocery store in a bunch of different sizes and absorbencies to match what you need. They come in cute packaging and colors so that you’ll start looking forward to your next period. (Okay, that’s an exaggeration. But really. Tampons are great!) The best part is that you won’t even feel an overwhelming rush every time you stand up because the cotton absorbs your blood before it exits your vagina. (Yeah cotton rocket, you go.) You can continue with your daily activities as if Aunt Flow isn’t there- and yes, that includes swimming!<br>
 
 				<h2><br>Pads</h2>
-				<p>	Although a more "old-fashioned" way to deal with periods, pads have come a long way from the ancient Chinese method of stuffing sand into a handkerchief to store up blood (True story!) Today's pads are comfortable, easy to use, and reliable. They are fast, safe (no risk of TSS) and easy to use and change- unlike tampons, you won't get blood on your hands and if you're hemophobic, you can change pads without looking.<br>
+				<p>	Pads are the OG of feminine products. They’ve come a long way since the ancient Chinese method of stuffing sand into a handkerchief to store up blood (True story!) Today’s pads are comfortable, easy to use, and reliable. They are safe (no risk of TSS) and easy to use and change- unlike tampons, you won’t get blood on your hands and if you’re hemophobic, you can change pads without looking.<br>
 
-				<br>In short, pads are rectangular cotton material that you stick to your underwear to soak up your blood after blood leaves your vagina. Many modern day pads have additional "wings" on the side, extra material that you fold over the sides of your underwear to further prevent leaking. Similar to tampons, they come in all absorbencies and sizes (lengths)  that you can find at your local pharmacy or grocery stores. Not to worry- many pads today are papery thin (you can barely tell they're there) yet extremely absorbent and reliable.<br></p>
+				<br>In short, pads are rectangular cotton material that you stick to your underwear to soak up blood after blood leaves your vagina. Stickers. Pads are basically big cotton stickers. And tbh who doesn’t like stickers? Many modern day pads have additional “wings” on the side, extra material that you fold over the sides of your underwear to further prevent leaking. Like tampons, they come in all absorbencies and sizes (by pad sizes we mean different lengths)  that you can find at your local pharmacy/grocery store. Bonus: Many pads today are papery thin (you can barely tell they’re there), extremely absorbent and reliable.<br></p>
 
 				<br><h2>PantyLiners</h2>
-				<p>You can think of panty liners as mini pads used when pads are considered too "excessive".Panty-liners generally replace pads near the end of your period, when you want a layer beneath tampon as added protection against leaking, or just when you have slight vaginal discharge (don't worry, this is normal!) They look like pads but are thinner and narrower in construction.</p>
+				<p>You can think of panty liners as mini pads used when pads are considered too “excessive”. Panty-liners generally replace pads near the end of your period, when you want a layer beneath tampon as added protection against leaking, or just when you have slight vaginal discharge (don’t worry, this is normal!) They look like pads but are thinner and narrower in construction.</p>
 				
 				<br><h2>Cups</h2>
-				<p>Okay, now we're talking unconventional methods. Menstrual cups are the least common form of period protection because adults generally fail to publicize this product. Menstrual cups are way underrated tbh. They're environmentally friendly and comfortable with practice. Menstrual cups are flexible bell-shaped collectors that gather all of those lady liquids before they exit the body, thus providing similar benefits as tampons. They also have an added advantage of environmental friendliness and fewer health risks such as TSS and vaginal infections that come with repeated tampon usage. Menstrual cups are reusable and are emptied then washed before reinsertion.<br>
+				<p>Okay, now we’re talking unconventional methods. Menstrual cups are the least common form of period protection because adults generally fail to publicize this product. Menstrual cups are way underrated tbh. They’re environmentally friendly and comfortable with practice. Menstrual cups are flexible bell-shaped collectors that gather all of those lady liquids before they exit the body, thus providing similar benefits as tampons. They also have an added advantage of environmental friendliness and fewer health risks such as TSS and vaginal infections that come with repeated tampon usage. Menstrual cups are reusable and are emptied then washed before reinsertion.<br>
 
 				<br>Because using menstrual cups generally require a certain level of skill, they are best used after you have had some experience with using tampons (insertion methods can be difficult when you first start your period!)<br>
 				</p>
 				
 				<div id="slider">
-						 <a href="#" class="control_next"></a>
-						 <a href="#" class="control_prev"></a>
-						 <ul class="img-list">
-						   <li><img src="media/pearl.JPG" style="width:200px; height:240px;"/></li>
-						   <li><img src="media/playtex.JPG"></li>
-						   <li><img src="media/ob.JPG" style="width:300px; height:340px;"></li>
-						   <li><img src="media/sea.JPG"></li>
-						   <li><img src="media/always.JPG"></li>
-						   <li><img src="media/maxi.JPG" style="width:300px; height:340px;"></li>
-						   <li><img src="media/reusable.JPG" style="width:300px; height:340px;"></li>
-						   <li><img src="media/poise.JPG" style="width:300px; height:340px;"></li>
-						   <li><img src="media/diva.JPG" style="width:200px; height:340px;"></li>
-						   <li><img src="media/soft.JPG"></li>
-						 </ul>  
+						<a href="#" class="control_next"></a>
+						<a href="#" class="control_prev"></a>
+						<ul>
+							<li style="background: #FFFFFF; font-size:83px; top:30%;">TAMPONS</li>
+						  <li>
+						  <div class="caption">TAMPAX PEARL TAMPONS<br><br>PROS:<br> Smooth, pearl-like applicator makes this product easy for first time users.<br> Available in many different absorbencies.<br> Built in Backup Braid helps prevent leaks.<br><br> CONS:<br> More expensive than cardboard applicator tampons.</div>
+						  <img src="media/pearl.JPG" style="width:200px; height:240px;"/></li>
+						  <li>
+						  <div class="caption">U BY KOTEX TAMPONS<br><br>PROS:<br> Smooth tip so insertion is quick and easy.<br> Comes in three different colors.<br> Easy to use - pull until you hear it click into place then insert it and it's perfect to carry in purses.<br> Expands all around so you're fully covered.<br><br> CONS:<br> Plastic applicator.</div>
+						  <img src="http://ecx.images-amazon.com/images/I/91g4joUjM-L._SX355SX355_SY329_CR,0,0,355,329_PIbundle-4,TopRight,0,0_SX355_SY329_CR,0,0,355,329_SH20_.jpg" style="width:240px; height:240px;"/></li>
+						  <li>
+						  	<div class="caption">PLAYTEX TAMPONS<br><br>PROS:<br> Small and compact, easy to store in your purse and no wasted plastic applicator.<br> More environmentally friendly.<br> Cheap yet comfortable.<br><br> CONS:<br> Known for less absorbency than Tampax tampons.<br> No applicator makes for harder insertion.<br></div>
+						  	<img src="media/playtex.JPG"></li>
+						  <li>
+						  	<div class="caption">OB TAMPONS<br><br>PROS:<br> Great for first-time non-applicator tampon users.<br> Small and easy to carry around.<br> Easy insertion.<br><br> CONS:<br> Not good friends with heavy flowers.<br> No applicator makes for harder insertion.<br></div>
+						  	<img src="media/ob.JPG" style="width:300px; height:340px;"></li>
+						  <li>
+						  	<div class="caption">SEA SPONGE TAMPONS<br><br>PROS:<br> Environmentally friendly.<br> Highly absorbant, can be worn longer than most tampons.<br> Carries no risk of Toxic Shock Syndrome and does not throw body PH levels off track as tampons do.<br> Can be used during intercourse.<br><br> CONS:<br> Relatively difficult insertion and removal-you need to get the sponge all the way up to your cervix.<br> Not recommended for everyone-some users experience discomfort during bowel movement.<br></div>
+						  	<img src="media/sea.JPG"></li>
+						  	<li style="background: #FFFFFF; font-size:150px; top:30%">PADS</li>
+						  <li><div class="caption">ALWAYS INFINITY PADS<br><br>PROS:<br>Extremely thin- absorbs 4x its weight! (Wowow technology) You can barely tell it’s there.<br> The pad makes exceptional use of its two foam layers- blood is quickly transferred to the bottom layer where it is stored. This way, the top layer remains dry and fresh so you don’t get that icky I’m-sitting-on-my-own-blood feeling.<br> Foam is extremely soft<br><br> CONS:<br> On the more expensive side, as far as pads go.<br></div>
+						  	<img src="media/always.JPG"></li>
+						  <li><div>MAXI PADS<br><br>PROS:<br>Added length for better overnight protection.<br> Immediate sense of loving safety.<br> Wings for extra support.<br><br> CONS:<br> Fairly thick pad: noticeable when you wake up.<br> No guarantee of complete protection if you have very heavy flow (but then again, nothing can guarantee complete protection.<br></div>
+						  	<img src="media/maxi.JPG" style="width:300px; height:340px;"></li>
+						  <li><div>REUSEABLE PADS<br><br>PROS:<br>Environmentally friendly.<br> Cute designs.<br> Comfortable and easy to use.<br>Economic choice in the long run.<br><br> CONS:<br> Needs to be washed after each use- relatively high maintenance.<br> Does not provide immediate absorption like one-time use pads.<br></div>
+						  	<img src="media/reusable.JPG" style="width:300px; height:340px;"></li>
+						  <li style="background: #FFFFFF; font-size:60px; top:30%">PANTYLINERS</li>
+						  <li><div>POISE PANTYLINERS<br><br>PROS:<br>Holds an entire ounce, so does not require to be emptied as often.<br> Less leakage than tampons.<br> Non-absorbent and does not dry out bodily fluids like tampons do.<br>Economically friendly.<br></div>
+						  	<img src="media/poise.JPG" style="width:300px; height:340px;"></li>
+						  <li style="background: #FFFFFF; font-size:150px; top:30%;">CUPS</li>
+						  <li><div>DIVA CUPS<br><br>PROS:<br>Environmentally friendly.<br> Cute designs.<br> Comfortable and easy to use.<br>Economic choice in the long run.<br><br> CONS:<br> Similar to inserting a tampon but different at the same time.<br> High startup cost.<br></div>
+						  	<img src="media/diva.JPG" style="width:200px; height:340px;"></li>
+						  <li><div>DIVA CUPS<br><br>PROS:<br>Long wear-up to 12 hours (depending on how heavy your flow is).<br> Economically friendly.<br><br> CONS:<br> They can be very messy even if you are careful with them.<br> They leak especially when using the restroom.<br></div>
+						  	<img src="media/soft.JPG"></li>
+						</ul>  
 				</div>
+
 
 				<p><br>If you have any questions about tampons, check out our <a href="file:///C:/Users/Girls%20Who%20Code/Documents/2015-sip-seattle-microsoft-02/periED/info.html">common concerns</a><br></p>
 
 			</div>
 		</div>
+		<script>
+			$('ul li').hover(
+		function(){
+			$(this).find('div').fadeIn(250);
+		},
+		function(){
+			$(this).find('div').fadeOut(250);
+		}
+	);
+
+</script>
 	
 	</body>
 	<footer class="footer">
