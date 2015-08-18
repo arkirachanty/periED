@@ -91,3 +91,17 @@ a {
 #header-text {
   color: white;
 }
+
+#quiz-btn {
+  background-color: #81C6DD;
+  padding-top: 10px;
+}
+
+#quiz-btn p {
+  color: white;
+  font-size: 25px;
+}
+
+#quiz-btn:hover {
+  background-color: #669CAD;
+}
