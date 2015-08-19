@@ -311,7 +311,18 @@ function questionOne(answer) {
 			score[1] += 1;
 			score[2] += 1; 
 		}
-		questionsAnswered[5] = true;
+
+		if(answer==11)
+		{
+			changeImage10()
+			score[14] += 1;
+			score[15] += 1;
+			score[16] += 1;
+			score[0] += 1; 
+			score[1] += 1;
+			score[2] += 1; 
+		}
+			questionsAnswered[5] = true;
 	}
 }
 
