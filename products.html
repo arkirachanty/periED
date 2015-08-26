@@ -16,18 +16,18 @@
 		<script src="js/jquery.flexslider-min.js"></script>
 		<style>
 		ul li{
-			float:inherit; 
-			padding:40px; 
-			border:black; 
+			float:inherit;
+			padding:40px;
+			border:black;
 			margin:50px;
 			background: black;
 			width: 250px;
 		}
     	ul li div{
-    		display:block; 
-    		background:black; 
+    		display:block;
+    		background:black;
     		background-size: cover;
-    		opacity:1; 
+    		opacity:1;
     		position:absolute;
     		text-align: center;
     		min-height: 50%;
@@ -40,10 +40,10 @@
   			transition: opacity 300ms;
     	}
 
-			
+
   		</style>
   			<script>
- 
+
 			  jQuery(document).ready(function ($) {
 
 			$('#checkbox').change(function(){
@@ -51,16 +51,16 @@
 			      moveRight();
 			  }, 3000);
 			});
-			 
+
 				var slideCount = $('#slider ul li').length;
 				var slideWidth = $('#slider ul li').width();
 				var slideHeight = $('#slider ul li').height();
 				var sliderUlWidth = slideCount * slideWidth;
-				
+
 				$('#slider').css({ width: slideWidth, height: slideHeight });
-				
+
 				$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-				
+
 			  $('#slider ul li:last-child').prependTo('#slider ul');
 
 			  function moveLeft() {
@@ -145,13 +145,13 @@
 
 				<br><h2>PantyLiners</h2>
 				<p>You can think of panty liners as mini pads used when pads are considered too “excessive”. Panty-liners generally replace pads near the end of your period, when you want a layer beneath tampon as added protection against leaking, or just when you have slight vaginal discharge (don’t worry, this is normal!) They look like pads but are thinner and narrower in construction.</p>
-				
+
 				<br><h2>Cups</h2>
 				<p>Okay, now we’re talking unconventional methods. Menstrual cups are the least common form of period protection because adults generally fail to publicize this product. Menstrual cups are way underrated tbh. They’re environmentally friendly and comfortable with practice. Menstrual cups are flexible bell-shaped collectors that gather all of those lady liquids before they exit the body, thus providing similar benefits as tampons. They also have an added advantage of environmental friendliness and fewer health risks such as TSS and vaginal infections that come with repeated tampon usage. Menstrual cups are reusable and are emptied then washed before reinsertion.<br>
 
 				<br>Because using menstrual cups generally require a certain level of skill, they are best used after you have had some experience with using tampons (insertion methods can be difficult when you first start your period!)<br>
 				</p>
-				
+
 				<div id="slider">
 						<a href="#" class="control_next"></a>
 						<a href="#" class="control_prev"></a>
@@ -187,7 +187,7 @@
 						  	<img src="Media/diva.JPG" style="width:200px; height:340px;"></li>
 						  <li><div>DIVA CUPS<br><br>PROS:<br>Long wear-up to 12 hours (depending on how heavy your flow is).<br> Economically friendly.<br><br> CONS:<br> They can be very messy even if you are careful with them.<br> They leak especially when using the restroom.<br></div>
 						  	<img src="Media/soft.JPG"></li>
-						</ul>  
+						</ul>
 				</div>
 
 
@@ -206,7 +206,7 @@
 	);
 
 </script>
-	
+
 	</body>
 	<footer class="footer">
       		<div class="container" id="footer">
@@ -223,6 +223,5 @@
       		</div>
       	</div>
       	<div class="container" id="copyright">
-      		<p class="text-muted">© Manohar Inc. 2015</p>
-    	</footer>
+<p class="text-muted"><a href="https://bitbucket.org/peried/peried.bitbucket.org.git">View Source</a>© Manohar Inc. 2015</p>    	</footer>
 </html>
